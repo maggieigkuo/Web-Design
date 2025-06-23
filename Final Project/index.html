@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fertility Crisis in Our "Demographically Divided World"</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+    <!-- GSAP + Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- jQuery + Lettering + Textillate -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+
+    <style>
+        body {
+            position: relative;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        #navbar {
+            font-family: 'Catcheye';
+            font-size: 1.2rem;
+            z-index: 1000;
+        }
+
+        #navbrand {
+            font-family: 'Catcheye';
+            font-size: 3.0rem;
+            margin-top: 0.5rem;
+        }
+
+
+        #section1 {
+            min-height: 100vh;
+            background-image: url("./img/peach.jpg");
+            background-size: 1500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #section2 {
+            min-height: 100vh;
+            background-image: url("./img/v960-ning-03.jpg");
+            background-size: 1500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #section3 {
+            min-height: 100vh;
+            background-image: url("./img/light-pink.jpg");
+            font-size: 1.0rem;
+            background-size: 1500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #section4 {
+            min-height: 100vh;
+            background-image: url("./img/blue.jpg");
+            font-size: 1.0rem;
+            background-size: 1500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #section5 {
+            min-height: 100vh;
+            background-image: url("./img/winter-blue.jpg");
+            font-size: 1.0rem;
+            background-size: 1500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #section6 {
+            min-height: 100vh;
+            background-image: url("./img/pastel blue.jpg");
+            font-size: 1.0rem;
+            background-size: 1500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #section7 {
+            min-height: 100vh;
+            background-image: url("./img/white.jpg");
+            font-size: 1.0rem;
+            background-size: 1500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #section9 {
+            min-height: 100vh;
+            background-image: url("./img/2026.jpg");
+            font-size: 1.0rem;
+            background-size: 3500px;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .title {
+            font-family: 'Catchye';
+            font-weight: bold;
+            font-size: 4.5rem;
+            letter-spacing: 3.0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-align: left;
+            color: rgb(46, 43, 70);
+            text-shadow: 2px 2px 5px rgba(229, 227, 217, 0.4);
+        }
+
+        .title-section2 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(46, 43, 70);
+            margin-top: 0rem;
+        }
+
+        .title-section3 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(46, 43, 70);
+            margin-top: 0rem;
+        }
+
+        .title-section4 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.5em;
+            align-items: left;
+            justify-content: left;
+            color: rgb(46, 43, 70);
+            margin-left: 1rem;
+        }
+
+        .title-section5 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.0rem;
+            letter-spacing: 3.0px;
+            color: rgb(46, 43, 70);
+            margin-top: 0rem;
+        }
+
+        .title-section6 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.0rem;
+            letter-spacing: 3.0px;
+            color: rgb(46, 43, 70);
+            margin-top: 0rem;
+        }
+
+        .title-section7 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.0rem;
+            letter-spacing: 3.0px;
+            color: rgb(46, 43, 70);
+            margin-bottom: 3rem;
+        }
+
+        .title-section8 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.5rem;
+            letter-spacing: 3.0px;
+            color: rgb(46, 43, 70);
+            margin-top: 3rem;
+            margin-left: 1rem;
+        }
+
+        .title-section9 {
+            font-family: 'Rosehot', sans-serif;
+            font-weight: bold;
+            font-size: 4.0rem;
+            letter-spacing: 3.0px;
+            color: rgb(46, 43, 70);
+            margin-bottom: 2rem;
+        }
+
+        .paragraph-section2 {
+            font-family: 'Drugs';
+            color: black;
+            font-size: 2.15rem;
+            margin-top: 1rem;
+        }
+
+        .counter-section2 {
+            font-family: 'DrugsIt';
+            font-size: 1.75rem;
+            color: rgb(59, 59, 59);
+        }
+
+        .paragraph-section3 {
+            font-family: "DrugsIt";
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        .h6-section4 {
+            font-family: 'DrugsIt';
+            color: black;
+            font-size: 1.5rem;
+            margin-top: 0rem;
+            margin-left: 1.0rem;
+        }
+
+        .paragraph-section4 {
+            font-family: 'Drugs';
+            font-size: 1.80rem;
+            color: black;
+            margin-top: 1.0rem;
+            margin-left: 1.0rem;
+        }
+
+        .paragraph-section42 a{
+            font-family: 'DrugsIt';
+            font-size: 1.0rem;
+            color: rgb(90,90,90);
+            margin-top: 1.0rem;
+            margin-left: 1.0rem;
+        }
+
+        .h6-section5 {
+            font-family: 'DrugsIt';
+            color: black;
+            font-size: 1.21rem;
+            text-align: left;
+        }
+
+        .paragraph-section5 {
+            font-family: 'Drugs';
+            font-size: 2.0rem;
+            color: black;
+            text-align: left;
+        }
+
+        .paragraph-section52 {
+            font-family: 'Drugs';
+            font-size: 2.0rem;
+            color: black;
+            text-align: right;
+        }
+
+        .paragraph-section7 {
+            font-family: 'Drugs';
+            font-size: 1.5rem;
+            color: black;
+            margin-bottom: 2rem;
+        }
+
+        .h5-section7 {
+            font-family: 'Drugs';
+            font-size: 1.8rem;
+            color: black;
+        }
+
+        .custom-card {
+            background-color: #f8f1ff;   
+            color: #1a1a1a;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+
+        .custom-card:hover {
+            background-color: #e0d0ff;
+            transition: background-color 0.3s ease;
+        }
+
+        .paragraph-section9 {
+            font-family: 'Drugs';
+            font-size: 1.5rem;
+            color: black;
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .h6-section6 {
+            font-family: 'DrugsIt';
+            color: black;
+            font-size: 1.21rem;
+            text-align: left;
+        }
+
+        .material-symbols-outlined {
+            font-size: 50px;
+            margin-left: 1.0rem;
+            margin-right: 1.0rem;
+        }
+
+        .table-container {
+            width: 80%;
+            margin: 10px;
+            border-collapse: collapse;
+        }
+
+        .table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: "Drugs";
+            min-width: 500px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .table th,
+        .table td {
+            text-align: center;
+            border: 1px solid #999;
+            color: black;
+            padding: 10px;
+        }
+
+        .table thead th {
+            background-color: rgb(220, 143, 143);
+            color: rgb(46, 43, 70);
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: rgb(220, 143, 143) !important;
+        }
+
+        .fly-in {
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .table-title {
+            font-family: "Rosehot";
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .timeline-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url("img/v960-ning-34.jpg");
+            background-size: 1500px;
+            padding-top: 0rem;
+        }
+
+        .timeline {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            height: 100%;
+            padding-left: 30vw;
+            padding-right: 30vw;
+            gap: 100px;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: #ffff;
+            z-index: -2;
+        }
+
+        .event {
+            position: relative;
+            width: 350px;
+            background-color: #ffff;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            bottom: 10%;
+        }
+
+        .event img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .event-content {
+            padding: 15px;
+        }
+
+        .event-title {
+            font-size: 1.5rem;
+            margin: 0;
+            font-family: "Apollo";
+            font-weight: bold;
+            color: rgb(46, 43, 70);
+        }
+
+        .event-description {
+            font-size: 1.2rem;
+            font-family: "ApolloIt";
+            font-weight: bold;
+            margin-top: 0px;
+            color: black;
+        }
+
+
+        @font-face {
+            font-family: 'Rosehot';
+            src: url('./fonts/Rosehot.woff2') format('woff2')
+        }
+
+        @font-face {
+            font-family: 'Catchye';
+            src: url('./fonts/Catchye.woff2') format('woff2')
+        }
+
+        @font-face {
+            font-family: 'Drugs';
+            src: url('./fonts/Drugs.woff2') format('woff2')
+        }
+
+        @font-face {
+            font-family: 'DrugsIt';
+            src: url('./fonts/DrugsIt.woff2') format('woff2')
+        }
+
+        @font-face {
+            font-family: 'Apollo';
+            src: url('./fonts/APOLLO.woff') format('woff2')
+        }
+
+        @font-face {
+            font-family: 'ApolloIt';
+            src: url('./fonts/APOLLOItalic.woff') format('woff2')
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" class="scrollspy-example" tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg  navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a id="navbrand" class="navbar-brand" href="#">
+                <h5>Global Fertility Crisis</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Nav links -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="#section1">Home</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#section2">Differences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section3">Driving Factors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section4">Globally</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section5">High-Income Countries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section6">Low-Income Countries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section7">Divide Cause</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section8">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section9">Bottomline</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+
+    <main class="container-fluid p-0">
+        <section id="section1" class="text-black">
+            <div class="container">
+                <div class="row">
+                    <div class="title tlt col-8" data-in="fadeInDown">FERTILITY CRISIS IN OUR "DEMOGRAPHICALLY DIVIDED WORLD”</div>
+                    <div class="col-md-4" data-in="fadeInDown">
+                        <img src="img/woman-flower.svg" alt="Demographic Divide Illustration" class="img-fluid mt-4"
+                            style="max-width: 450px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="title-section2"><span class="material-symbols-outlined">fertile</span> WHAT IS THE
+                        DIFFERENCE?<span class="material-symbols-outlined">fertile</span></div>
+                    <div class="col-md-12">
+                        <p class="paragraph-section2">
+                            <strong>Birth Rate</strong>: The total number of births in a year <strong>per 1,000
+                                individuals</strong> <br>
+                        <p id="counter" class="counter-section2">Since you loaded the page, 0 people are born in the
+                            world</p>
+                        </p>
+                        <p class="paragraph-section2">
+                            <strong>Fertility Rate</strong>: The total number of births in a year <strong>per 1,000
+                                women of reproductive age in a population</strong>
+                        <p id="counter2" class="counter-section2">Since you loaded the page, 0 women have died</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" class="text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="title-section3"><span class="material-symbols-outlined">star</span>KEY DRIVERS OF
+                            FERTILITY RATE<span class="material-symbols-outlined">star</span></div>
+                    </div>
+                    <div class="paragraph-section3 col-6 mt-5">
+                        <p>
+                            1. Education level <br>
+                            2. Modern contraception <br>
+                            3. Child mortality <br>
+                            4. Living in urban areas <br>
+                            5. Religion
+                        </p>
+                    </div>
+                    <div class="col-md-6 mt-5 text-center">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="3000">
+                                    <img src="./img/education.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./img/fertility-vs-contraception.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./img/fertility-vs-child-mortality.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="3000">
+                                    <img src="./img/gdp2.png" class="d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 (Row) -->
+        <section id="section4" class="text-white position-relative overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="title-section4 col-6"> WORLDWIDE...</div>
+                    <h6 class="h6-section4">From “1950 to 2021 the global birth rate experienced a fall from 5 births
+                        per woman to 2.3”</h6>
+                    <div class="col-6">
+                        <p class="paragraph-section4">
+                            For the last 70 years, fertility rates have <strong>decreased worldwide</strong>, with a
+                            total <strong>50% decline</strong> <br>
+                            <br>
+                            By <strong>2050</strong>, over three-quarters (155 of 204) of countries will
+                            <strong>not</strong> have high enough fertility rates to sustain population size over time
+                            <br>
+                            <br>
+                            Many countries in <strong>sub-Saharan Africa</strong>, fertility rates remain high—
+                            <strong>four children per female</strong> in 2021 (nearly <strong>2x the global average</strong>)
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center mt-4">
+                        <div><canvas id="myChart" height="250"></canvas></div>
+                        <p class="paragraph-section42"><a href="https://data.worldbank.org/indicator/SP.DYN.TFRT.IN" target = "_blank">Source: Total Births Per Woman</a>
+                            <br>
+                            <a href="https://data.worldbank.org/indicator/SP.DYN.TFRT.IN?locations=ZG" target = "_blank">Source: Total Births Per Woman in Sub-Saharn Africa</a>
+                        </p>
+                    </div>
+                </div>
+                <img src="img/map.svg" class="position-absolute top-50 start-50 translate-middle"
+                    style="opacity: 0.08; object-fit: cover; z-index: 1; pointer-events: none;">
+        </section>
+
+        <!-- Section 5 (Column) -->
+        <section id="section5" class="text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="title-section5"><span class="material-symbols-outlined">money_bag</span> HIGH INCOME
+                            COUNTRIES VS.<span class="material-symbols-outlined">money_bag</span>
+                        </div>
+                    </div>
+                    <h6 class="h6-section5 mt-2">In the <strong>70s</strong> “women in the <strong>most prosperous Asian
+                            economies</strong> like South Korea, Japan, and China were having <strong>more than five
+                            children on average</strong>”</h6>
+                    <div class="col-6">
+                        <p class="paragraph-section5 col-12 mt-3"><strong>Japan</strong>: fertility rate dropped to a
+                            record low of <strong>1.26 births per woman</strong> <br>
+                            <br>
+                            <strong>South Korea</strong>: 0.84 children per couple in 2022 to 0.81 in 2023.<br>
+                            By 2024, the rate is projected to fall even further to 0.68
+                        </p>
+                    </div>
+                    <div id="low-10-fertility" class="col-6 d-flex justify-content-end align-items-center"
+                        style="height: 100%;">
+                        <div class="table-container">
+                            <h4 class="table-title text-center mb-2">Lowest 10 Country Fertility Rates <br>
+                                (Worldwide) (2050)</h4>
+                            <table class="table" style="width: auto;">
+                                <thead>
+                                    <tr>
+                                        <th>Country</th>
+                                        <th>Fertility Rates</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>South Korea (High-income Asia Pacific)</td>
+                                        <td>0.82</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Puerto Rico (Caribbean)</td>
+                                        <td>0.84</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Taiwan (Province of China) (East Asia)</td>
+                                        <td>0.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Serbia (Central Europe)</td>
+                                        <td>1.01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ukraine (Eastern Europe)</td>
+                                        <td>1.01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Andorra (Western Europe)</td>
+                                        <td>1.02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saint Lucia (Caribbean)</td>
+                                        <td>1.04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bhutan (South Asia)</td>
+                                        <td>1.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Maldives (Southeast Asia)</td>
+                                        <td>1.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kuwait (North Africa and Middle East)</td>
+                                        <td>1.07</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Section 6 (Row) -->
+        <section id="section6" class="text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="title-section6"><span class="material-symbols-outlined">mintmark</span>LOW INCOME
+                            COUNTRIES<span class="material-symbols-outlined">mintmark</span></div>
+                    </div>
+                    <h6 class="h6-section6 mt-2s">High fertility rates in numerous low-income countries—<strong>mainly
+                            Western and Eastern sub-Saharan Africa</strong>—will continue to drive population increases
+                        throughout the century</h6>
+                    <div class="col-md-6 d-flex flex-column justify-content-center" style="min-height: 100%;">
+                        <p class="paragraph-section5 col-12 mt-3">
+                            <strong>2021</strong>: 29% of the world’s babies were born in sub-Saharan Africa<br>
+                            <br>
+                            <strong>2100</strong>: rise to over half (54%) of all babies
+                        </p>
+                    </div>
+                    <div id="top-10-fertility" class="col-6 d-flex justify-content-end align-items-center"
+                        style="height: 100%;">
+                        <div class="table-container">
+                            <h4 class="table-title text-center mb-2">Top 10 Country Fertility Rates (Worldwide) (2050)
+                            </h4>
+                            <table class="table" style="width: auto;">
+                                <thead>
+                                    <tr>
+                                        <th>Country</th>
+                                        <th>Fertility Rates</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Niger (Western sub-Saharan Africa)</td>
+                                        <td>5.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chad (Western sub-Saharan Africa)</td>
+                                        <td>4.81</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Somalia (Eastern sub-Saharan Africa)</td>
+                                        <td>4.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mali (Western sub-Saharan Africa)</td>
+                                        <td>4.21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>South Sudan (Eastern sub-Saharan Africa)</td>
+                                        <td>4.09</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Burkina Faso (Western sub-Saharan Africa)</td>
+                                        <td>3.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Afghanistan (North Africa and Middle East)</td>
+                                        <td>3.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Samoa (Oceania)</td>
+                                        <td>3.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Benin (Western sub-Saharan Africa)</td>
+                                        <td>3.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tonga (Oceania)</td>
+                                        <td>3.04</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7 (Column) -->
+        <section id="section7" class="text-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center">
+                        <div class="title-section7"><span class="material-symbols-outlined">safety_divider</span>WHAT IS CAUSING THIS DIVIDE?<span class="material-symbols-outlined">safety_divider</span></div>
+                    </div>
+                    <div class="row gx-5 gy-3 justify-content-center" style="margin-top: -2rem;">
+                        <div class="col-md-5 card-column">
+                            <div class="card custom-card shadow-sm p-4 h-100">
+                                <h5 class="h5-section7"><strong><u>High-Income Countries Face:</u></strong></h5>
+                                <p class="paragraph-section7">
+                                    Economic pressures
+                                    <br>
+                                    <br>
+                                    Shrinking workforce
+                                    <br>
+                                    <br>
+                                    Responsibility of caring and paying for aging population
+                                    <br>
+                                    <br>
+                                    Increased cost to raising children
+                                    <br>
+                                    <br>
+                                    Lower child mortality
+                                    <br>
+                                    <br>
+                                    Women’s empowerment (education and workforce)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 card-column">
+                            <div class="card custom-card shadow-sm p-4 h-100">
+                                <h5 class="h5-section7"><strong><u>Low-Income Countries Face:</u></strong></h5>
+                                <p class="paragraph-section7">
+                                    Lack of contraceptions
+                                    <br>
+                                    <br>
+                                    Lack of healthcare infrastructure
+                                    <br>
+                                    <br>
+                                    Lack of women’s reproductive rights
+                                    <br>
+                                    <br>
+                                    Non-prioritization of education and family planning
+                                    <br>
+                                    <br>
+                                    Climate change effects
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Section 8 (Row) -->
+        <section id="section8" class="bg-dark text-white">
+            <div class="timeline-container" id="solutions">
+                <div class="title-section8"><span class="material-symbols-outlined">lightbulb</span>SOLUTIONS:<span
+                        class="material-symbols-outlined">lightbulb</span></div>
+                <div class="timeline-line"></div>
+                <div class="timeline" id="timeline"></div>
+            </div>
+        </section>
+
+        <!-- Section 9 (Column) -->
+        <section id="section9" class="text-dark py-5">
+            <div class="container">
+              <div class="col-lg-12 mb-4">
+                <div class="title-section9">
+                  <span class="material-symbols-outlined">line_start</span> 
+                  THE BOTTOMLINE 
+                  <span class="material-symbols-outlined">line_end</span>
+                </div>
+              </div>
+          
+              <!-- Block 1 -->
+              <div class="row align-items-center mb-5 reveal-block">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <img src="https://www.liveaction.org/news/wp-content/uploads/2020/09/GettyImages-534250242.jpg" 
+                       class="img-fluid rounded shadow w-100" 
+                       alt="Empty Baby Cribs">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                  <p class="paragraph-section9 mb-0">
+                    <strong>Fertility is a global issue</strong> — wealthier countries face population shrinkage, while lower-income nations face sustainability challenges.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Block 2 -->
+              <div class="row align-items-center mb-5 reveal-block">
+                <div class="col-md-6 order-md-2 mb-3 mb-md-0">
+                  <img src="https://www.imd.org/ibyimd/wp-content/uploads/2023/10/AdobeStock_489404131-scaled.jpeg" 
+                       class="img-fluid rounded shadow w-100" 
+                       alt="Women's Empowerment Illustration">
+                </div>
+                <div class="col-md-6 order-md-1 d-flex align-items-center">
+                  <p class="paragraph-section9 mb-0">
+                    <strong>Empower women</strong> — through education, healthcare access, and workplace rights—nations with 
+                    <strong>strong women’s rights</strong> are more likely to have better health outcomes and faster economic growth.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Block 3 -->
+              <div class="row align-items-center reveal-block">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <img src="https://i.pinimg.com/736x/5a/9f/01/5a9f01f6dc855075e2154f3e15013708.jpg" 
+                       class="img-fluid rounded shadow w-100" 
+                       alt="Nuanced Policy Illustration">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                  <p class="paragraph-section9 mb-0">
+                    <strong>A nuanced approach is needed</strong> — addressing the fertility crisis requires tailored policies that respect individual choices, promote gender equality, and consider environmental sustainability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark text-center py-4 mt-0">
+        <div class="container">
+            <p class="mb-1">&copy; 2025 Maggie Kuo</p>
+            <p class="mb-0 small">Made in DiDa 280W</p>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // textillate setup
+        let tlt = $('.tlt');
+        tlt.textillate({ in: { effect: 'fadeIn' }, out: { effect: 'fadeOutDown' }, autoStart: false });
+
+
+        ScrollTrigger.create({
+            trigger: "#section1 .row",
+            start: "top 80%",
+            onEnter: () => {
+                tlt.textillate('in');
+                gsap.fromTo("#section1 .row", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" });
+            },
+            onLeave: () => {
+                tlt.textillate('out');
+                gsap.fromTo("#section1 .row", { opacity: 0, y: 0 }, { opacity: 0, y: 100, duration: 1, ease: "power2.out" });
+            },
+            onEnterBack: () => {
+                tlt.textillate('in');
+                gsap.fromTo("#section1 .row", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 1, ease: "power2.out" });
+            },
+            onLeaveBack: () => {
+                tlt.textillate('out');
+                gsap.fromTo("#section1 .row", { opacity: 0, y: 0 }, { opacity: 0, y: 100, duration: 1, ease: "power2.out" });
+            }
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section2 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo("#section2 .row", 
+                { opacity: 0, x: -100 }, 
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section2 .row", 
+                { opacity: 0, x: 100, duration: 1, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo("#section2 .row", 
+                { opacity: 0, x: -100 }, 
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.to("#section2 .row", 
+                { opacity: 0, x: 100, duration: 1, ease: "power2.in" }
+                );
+            }
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section3 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo("#section3 .row", 
+                { opacity: 0, x: 100 }, 
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section3 .row", 
+                { opacity: 0, x: -100, duration: 1, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo("#section3 .row", 
+                { opacity: 0, x: 100 }, 
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.to("#section3 .row", 
+                { opacity: 0, x: -100, duration: 1, ease: "power2.in" }
+                );
+            }
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section4 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo("#section4 .row", 
+                { opacity: 0, rotate: -5 }, 
+                { opacity: 1, rotate: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section4 .row", 
+                { opacity: 0, rotate: -45, duration: 1, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo("#section4 .row", 
+                { opacity: 0, rotate: -5 }, 
+                { opacity: 1, rotate: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.to("#section4 .row", 
+                { opacity: 0, rotate: -45, duration: 1, ease: "power2.in" }
+                );
+            }
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section5 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo("#section5 .row",
+                { opacity: 0, scale: 0.9 },
+                { opacity: 1, scale: 1, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section5 .row",
+                { opacity: 0, scale: 0.5, duration: 1, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo("#section5 .row",
+                { opacity: 0, scale: 0.9 },
+                { opacity: 1, scale: 1, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.to("#section5 .row",
+                { opacity: 0, scale: 0.5, duration: 1, ease: "power2.in" }
+                );
+            }
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section6 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo("#section6 .row",
+                { opacity: 0, skewX: 10 },
+                { opacity: 1, skewX: 0, duration: 1.5, ease: "power2.out" }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section6 .row",
+                { opacity: 0, skewX: 10, duration: 1.5, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo("#section6 .row",
+                { opacity: 0, skewX: 10 },
+                { opacity: 1, skewX: 0, duration: 1.5, ease: "power2.out" }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.to("#section6 .row",
+                { opacity: 0, skewX: 10, duration: 1.5, ease: "power2.in" }
+                );
+            }
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section7 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo(".title-section7", 
+                { opacity: 0, y: 50 },
+                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+                );
+                gsap.fromTo("#section7 .card-column:nth-child(1)",
+                { opacity: 0, x: -100 },
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+                gsap.fromTo("#section7 .card-column:nth-child(2)",
+                { opacity: 0, x: 100 },
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section7 .card-column:nth-child(1)", {
+                opacity: 0, x: -100, duration: 1, ease: "power2.in"
+                });
+                gsap.to("#section7 .card-column:nth-child(2)", {
+                opacity: 0, x: 100, duration: 1, ease: "power2.in"
+                });
+                gsap.to(".title-section7", {
+                opacity: 0, y: -50, duration: 1, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo(".title-section7", 
+                { opacity: 0, y: 50 },
+                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+                );
+                gsap.fromTo("#section7 .card-column:nth-child(1)",
+                { opacity: 0, x: -100 },
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+                gsap.fromTo("#section7 .card-column:nth-child(2)",
+                { opacity: 0, x: 100 },
+                { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.set(".title-section7", { opacity: 0, y: 50 });
+                gsap.set("#section7 .card-column:nth-child(1)", { opacity: 0, x: -100 });
+                gsap.set("#section7 .card-column:nth-child(2)", { opacity: 0, x: 100 });
+            }
+            
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section8 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo("#section8 .row", 
+                { opacity: 0, y: 100 }, 
+                { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section8 .row", 
+                { opacity: 0, y: 100, duration: 1.2, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo("#section8 .row", 
+                { opacity: 0, y: 100 }, 
+                { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.to("#section8 .row", 
+                { opacity: 0, y: 100, duration: 1.2, ease: "power2.in" }
+                );
+            }
+        });
+
+        ScrollTrigger.create({
+            trigger: "#section9 .row",
+            start: "top 80%",
+            onEnter: () => {
+                gsap.fromTo("#section9 .row", 
+                { opacity: 0, scale: 0.8 }, 
+                { opacity: 1, scale: 1, duration: 3.5, ease: "power2.out" }
+                );
+                gsap.fromTo("#section9 .paragraph-section9",
+                { opacity: 0, y: 30 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    stagger: 0.3,
+                    ease: "power2.out"
+                }
+                );
+            },
+            onLeave: () => {
+                gsap.to("#section9 .row", 
+                { opacity: 0, scale: 0.8, duration: 3.2, ease: "power2.in" }
+                );
+            },
+            onEnterBack: () => {
+                gsap.fromTo("#section9 .row", 
+                { opacity: 0, scale: 0.8 }, 
+                { opacity: 1, scale: 1, duration: 3.5, ease: "power2.out" }
+                );
+                gsap.fromTo("#section9 .paragraph-section9",
+                { opacity: 0, y: 30 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    stagger: 0.3,
+                    ease: "power2.out"
+                }
+                );
+            },
+            onLeaveBack: () => {
+                gsap.to("#section9 .row", 
+                { opacity: 0, scale: 0.8, duration: 3.2, ease: "power2.in" }
+                );
+            }
+        });
+    </script>
+
+    <script>
+
+        // Chart
+        let chartInstance = null;
+        const ctx = document.getElementById('myChart')?.getContext('2d');
+
+        function renderChart() {
+            if (!ctx) {
+                console.warn("Canvas context not found!");
+                return;
+            }
+
+            const labels = ['1950', '1960', '1970', '1980', '1990', '2000', '2010', '2023'];
+
+            const data = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Global Births per Woman',
+                        data: [4.85, 4.70, 4.83, 3.74, 3.31, 2.75, 2.60, 2.25],
+                        borderColor: 'rgb(41, 86, 157)',
+                        backgroundColor: 'rgba(41, 86, 157, 0.3)',
+                        fill: false,
+                        tension: 0.3,
+                        borderWidth: 4
+                    },
+                    {
+                        label: 'Births per Woman in Sub-Saharan Africa',
+                        data: [6.52, 6.64, 6.69, 6.59, 5.91, 5.20, 4.89, 4.07],
+                        borderColor: 'rgb(157, 41, 41)',
+                        backgroundColor: 'rgba(157, 41, 41, 0.3)',
+                        fill: false,
+                        tension: 0.3,
+                        borderWidth: 4
+                    }
+                ]
+            };
+
+            chartInstance = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: {
+                    animation: { duration: 1000 },
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: 'black',
+                                font: {
+                                    family: 'Catcheye',
+                                    size: 16
+                                }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: "Fertility Rate Decline: Global vs. Sub-Saharan Africa (1950–2023)",
+                            color: "black",
+                            font: {
+                                size: 20,
+                                family: 'Catcheye'
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Year',
+                                color: 'black',
+                                font: {
+                                    size: 16,
+                                    family: 'Catcheye'
+                                }
+                            },
+                            ticks: {
+                                color: 'black',
+                                font: {
+                                    size: 14, // 👈 change this number to adjust X-axis tick size
+                                    family: 'Catcheye'
+                                }
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Births',
+                                color: 'black',
+                                font: {
+                                    size: 16,
+                                    family: 'Catcheye'
+                                }
+                            },
+                            ticks: {
+                                color: 'black',
+                                font: {
+                                    size: 14, // 👈 change this number to adjust Y-axis tick size
+                                    family: 'Catcheye'
+                                }
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+
+        ScrollTrigger.create({
+            trigger: "#section4",
+            start: "top 80%",
+            onEnter: () => { if (!chartInstance) renderChart(); },
+            onLeaveBack: () => {
+                if (chartInstance) {
+                    chartInstance.destroy();
+                    chartInstance = null;
+                }
+            }
+        });
+
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar',
+            offset: 70
+        });
+    </script>
+
+    <script>
+
+
+        // Select rows in table
+        const Wrows = document.querySelectorAll("#low-10-fertility tr");
+
+        // Animate rows
+        gsap.from(Wrows, {
+            x: 100, // Fly in side
+            opacity: 0, //
+            duration: 1,
+            stagger: 0.5,
+            scrollTrigger: {
+                trigger: "#low-10-fertility",
+                start: "top 80%",
+                toggleActions: "restart none none none",
+            },
+        });
+    </script>
+
+    <script>
+
+
+        // Select rows in table
+        const Wrows2 = document.querySelectorAll("#top-10-fertility tr");
+
+        // Animate rows
+        gsap.from(Wrows2, {
+            x: 100, // Fly in side
+            opacity: 0, //
+            duration: 1,
+            stagger: 0.5,
+            scrollTrigger: {
+                trigger: "#top-10-fertility",
+                start: "top 80%",
+                toggleActions: "restart none none none",
+            },
+        });
+    </script>
+
+    <script>
+        let counter1 = {
+            v: 0,
+            rate: 4,
+            refreshRate: 1000,
+            id: "counter"
+        };
+
+        setInterval(increment, counter1.refreshRate, counter1);
+
+        function increment(counter) {
+            counter.v += counter.rate;
+            document.getElementById(counter.id).textContent = `Since you loaded the page, ${counter.v} people are born in the world`;
+        }
+    </script>
+
+    <script>
+        let counter2 = {
+            v: 0,
+            rate: 1,
+            refreshRate: 11000,
+            id: "counter2"
+        };
+
+        setInterval(increment, counter2.refreshRate, counter2);
+
+        function increment(counter) {
+            counter.v += counter.rate;
+            document.getElementById(counter.id).textContent = `Since you loaded the page, ${counter.v} women have died`;
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="timeline.js"></script>
+
+</body>
+
+</html>
