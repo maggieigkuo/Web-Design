@@ -1,0 +1,62 @@
+html, body {
+    background-image: url("./img/bg.jpg");
+    background-size: 2500px;
+}
+
+.navbar {
+    font-family: "Butler", sans-serif;
+}
+
+.about-section h1 {
+    font-family: "Carmila", sans-serif;
+    padding-top: 50px;
+    font-size: 45px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-family: "Butler", sans-serif;
+    padding-top: 50px;
+    font-size: 21px;
+    line-height: 1.6;
+    text-align: center;   
+    max-width: 90%;      
+    margin: 0 auto; 
+    margin-bottom: 30px;
+    margin-left: auto; 
+}
+
+.portfolio-text {
+    font-family: "Butler", sans-serif;
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+    font-size: 21px;
+}
+
+.about-section img {
+    max-width: auto;   
+    height: auto;     
+    display: block;
+    margin: auto; 
+    font-family: "Butler", sans-serif;
+    font-size: 30px;
+}
+
+.carousel-caption h5 {
+    font-family: "Butler", sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.carousel-caption p {
+    font-family: "Butler", sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}

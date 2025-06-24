@@ -1,0 +1,59 @@
+.sub-heading {
+    font-size: 80px;
+    color: rgb(54, 52, 52);
+    margin-top: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Carmila",sans-serif;
+    text-shadow: 5px 5px 0px rgb(185, 184, 184);
+}
+
+.main-heading {
+    font-size: 100px;
+    color: rgb(54, 52, 52);
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Carmila",sans-serif;;
+    text-shadow: 5px 5px 0px rgb(185, 184, 184);
+}
+
+.custom-btn {
+    font-family: "Carmila", sans-serif;
+}
+
+.navbar {
+    font-family: "Butler", sans-serif;
+}
+
+html, body {
+    background-image: url("./img/bg.jpg");
+    background-size: 2500px;
+}
+
+.carousel-item img {
+    margin: auto;
+    height: 500px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+    background-color: light gray;
+}
+
+#htmlSkill{
+    background-color: burlywood;
+}
+
+#pythonSkill{
+    background-color: palevioletred;
+}
+
+#cppSkill{
+    background-color: peachpuff;
+}

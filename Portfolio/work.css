@@ -1,0 +1,101 @@
+html, body {
+    background-image: url("./img/bg.jpg");
+    background-size: 2500px;
+}
+
+.navbar {
+    font-family: "Butler", sans-serif;
+}
+
+.work-section h2 {
+    font-family: "Carmila", sans-serif;
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.work-section .research {
+    font-family: "Carmila", sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.work-section .resume-projects {
+    font-family: "Butler", sans-serif;
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.skill-label {
+    font-family: "Butler", sans-serif; 
+    font-size: 16px; 
+    text-align: left; 
+    padding-top: 20px;
+    color: black; 
+}
+
+
+.work-section .research-list {
+    font-family: "Butler", sans-serif;
+    text-align: left;
+}
+
+.work-section .work {
+    font-family: "Carmila", sans-serif;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: left;
+}
+
+.work-section .work-experience {
+    font-family: "Butler", sans-serif;
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.work-section .work-list {
+    font-family: "Butler", sans-serif;
+    text-align: left;
+}
+.work-section-btn {
+    font-family: "Butler", sans-serif;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#TableauSkill {
+    background-color:rgb(30, 81, 123);
+  }
+
+#pythonSkill {
+    background-color:rgb(108, 122, 137);
+  }
+
+#htmlSkill {
+    background-color:rgb(149, 165, 166);
+  }
+#cppSkill {
+    background-color:rgb(103, 128, 159);
+}
+
+#MicrosoftSkill {
+    background-color:rgb(30, 81, 123);
+  }
+
+#SQLSkill {
+    background-color:rgb(108, 122, 137);
+  }
+
+#RSkill {
+    background-color:rgb(149, 165, 166);
+  }
+
+#LinuxSkill {
+    background-color:rgb(103, 128, 159);
+}
